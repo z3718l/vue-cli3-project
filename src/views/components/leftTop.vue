@@ -1,6 +1,7 @@
 <template>
   <div>
     left_top
+    <button @click="clickStore()">点击改变store</button>
     <LeftChild></LeftChild>
   </div>
 </template>
@@ -14,6 +15,11 @@ export default {
   inject: ['foo'],
   created() {
     console.log(`leftTop：${this.foo}`)
+  },
+  methods: {
+    clickStore() {
+      console.log('点击')
+    }
   }
 }
 </script>
