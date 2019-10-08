@@ -14,12 +14,13 @@ export default new Vuex.Store({
     },
     actions: {
         actionsAddCount(content) {
+            // actions 中可以写请求
             return content.commit('increment')
         }
     },
     getters: {
         getterCount(state) {
-            return state.count --
+            return state.count ++
         }
     }
 })
