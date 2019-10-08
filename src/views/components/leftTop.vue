@@ -26,6 +26,9 @@ export default {
     clickAction() {
       this.$store.dispatch('actionsAddCount')
     }
+  },
+  mounted() {
+    console.log(this.$store.state.isDev)
   }
 }
 </script>

@@ -9,10 +9,12 @@
   },
   "scripts": {
     "serve": "vue-cli-service serve --mode dev",
-    "dev": "vue-cli-service serve --mode dev",
     "build": "vue-cli-service build",
-    "build:prod": "vue-cli-service build --mode prod",
     "lint": "vue-cli-service lint",
+    "build:dev": "vue-cli-service build --mode dev",
+    "build:prod": "vue-cli-service build --mode prod",
+    "dev": "vue-cli-service serve --mode dev",
+    "prod": "vue-cli-service serve --mode prod",
     "commit": "git-cz"
   },
   "dependencies": {
