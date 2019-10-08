@@ -2,6 +2,8 @@
   <div>
     left_top
     <button @click="clickStore()">点击改变store</button>
+    <button @click="clickAction()">点击改变store2</button>
+    <p>{{$store.state.count}}</p>
     <LeftChild></LeftChild>
   </div>
 </template>
@@ -19,6 +21,10 @@ export default {
   methods: {
     clickStore() {
       console.log('点击')
+      this.$store.commit('increment')
+    },
+    clickAction() {
+      this.$store.dispatch('actionsAddCount')
     }
   }
 }
