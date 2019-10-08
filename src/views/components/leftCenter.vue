@@ -6,11 +6,17 @@
 </template>
 
 <script>
+// import {mapState} from 'vuex'
 export default {
   name: 'leftCenter',
   mounted() {
     console.log(this.$store.state)
-  }
+  },
+  // computed: {
+  //   ...mapState([
+  //     'isDev'
+  //   ])
+  // }
 }
 </script>
 
