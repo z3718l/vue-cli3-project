@@ -2,21 +2,22 @@
   <div class="left_center_box">
     leftCenter
     <p>{{this.$store.state.count}}</p>
+    <p>{{this.isDev}}</p>
   </div>
 </template>
 
 <script>
-// import {mapState} from 'vuex'
+import {mapState} from 'vuex'
 export default {
   name: 'leftCenter',
   mounted() {
-    console.log(this.$store.state)
+    console.log(this.isDev)
   },
-  // computed: {
-  //   ...mapState([
-  //     'isDev'
-  //   ])
-  // }
+  computed: {
+    ...mapState([
+      'isDev'
+    ])
+  }
 }
 </script>
 
