@@ -23,8 +23,8 @@ export default {
 
 <style lang="scss">
   .left_center_box {
-    width: 100px;
-    height: 100px;
+    width: 10rem;
+    height: 10rem;
     border: 1px solid #f00;
   }
 </style>
